@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+html.dark-theme {
+  background-color: var(--color-slate-950);
+  color: var(--color-slate-50);
+
+  /* Invert Slate (Grays) for Dark Mode */
+  --color-white: #0f172a;
+  --color-slate-50: #1e293b;
+  --color-slate-100: #334155;
+  --color-slate-200: #475569;
+  --color-slate-300: #64748b;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #cbd5e1;
+  --color-slate-600: #e2e8f0;
+  --color-slate-700: #f1f5f9;
+  --color-slate-800: #f8fafc;
+  --color-slate-900: #ffffff;
+  --color-slate-950: #ffffff;
+
+  /* Muted Red for Dark Mode */
+  --color-red-50: #2d1618;
+  --color-red-100: #3f1d20;
+  --color-red-200: #5c2428;
+  --color-red-300: #8c363f;
+  --color-red-400: #b54551;
+  --color-red-500: #cc4d5b;
+  --color-red-600: #e05e6b;
+  --color-red-700: #e67c87;
+  --color-red-800: #ebaeb4;
+  --color-red-900: #f3d4d7;
+  --color-red-950: #fee8e9;
+
+  /* Muted Emerald for Dark Mode */
+  --color-emerald-50: #102619;
+  --color-emerald-100: #163a25;
+  --color-emerald-200: #1e5c38;
+  --color-emerald-300: #2b8c53;
+  --color-emerald-400: #3db86f;
+  --color-emerald-500: #4dcf81;
+  --color-emerald-600: #62d992;
+  --color-emerald-700: #82e3a8;
+  --color-emerald-800: #abeebd;
+  --color-emerald-900: #d6f6e1;
+  --color-emerald-950: #edfaef;
+
+  /* Muted Amber for Dark Mode */
+  --color-amber-50: #2b1f0d;
+  --color-amber-100: #402d0d;
+  --color-amber-200: #5e4210;
+  --color-amber-300: #855b14;
+  --color-amber-400: #b37819;
+  --color-amber-500: #d99221;
+  --color-amber-600: #f0a83a;
+  --color-amber-700: #f5c067;
+  --color-amber-800: #fadc96;
+  --color-amber-900: #fcf0cd;
+  --color-amber-950: #fef9e8;
+
+  /* Muted Indigo for Dark Mode */
+  --color-indigo-50: #151829;
+  --color-indigo-100: #1c203b;
+  --color-indigo-200: #272d57;
+  --color-indigo-300: #363e7d;
+  --color-indigo-400: #4753a8;
+  --color-indigo-500: #5966cc;
+  --color-indigo-600: #7480e0;
+  --color-indigo-700: #949def;
+  --color-indigo-800: #b9c0f5;
+  --color-indigo-900: #dcdff9;
+  --color-indigo-950: #eff0fc;
+
+  /* Muted Blue for Dark Mode */
+  --color-blue-50: #111a2e;
+  --color-blue-100: #162747;
+  --color-blue-200: #1f3b6b;
+  --color-blue-300: #2f5aa6;
+  --color-blue-400: #4275d4;
+  --color-blue-500: #578bf0;
+  --color-blue-600: #73a0f5;
+  --color-blue-700: #94b8f7;
+  --color-blue-800: #b5cff7;
+  --color-blue-900: #dbe8fa;
+  --color-blue-950: #eff4fc;
+}
+.gsi-material-button {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  background-color: WHITE;
+  background-image: none;
+  border: 1px solid #747775;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #1f1f1f;
+  cursor: pointer;
+  font-family: 'Roboto', arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 44px;
+  letter-spacing: 0.25px;
+  outline: none;
+  padding: 0 12px;
+  position: relative;
+  text-align: center;
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  max-width: 400px;
+  min-width: min-content;
+}
+
+.gsi-material-button .gsi-material-button-icon {
+  height: 20px;
+  margin-right: 12px;
+  min-width: 20px;
+  width: 20px;
+}
+
+.gsi-material-button .gsi-material-button-content-wrapper {
+  -webkit-align-items: center;
+  align-items: center;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.gsi-material-button .gsi-material-button-contents {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.gsi-material-button .gsi-material-button-state {
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .218s;
+}
+
+.gsi-material-button:hover .gsi-material-button-state {
+  background-color: #303030;
+  opacity: 0.04;
+}
+
+.gsi-material-button:focus .gsi-material-button-state {
+  background-color: #303030;
+  opacity: 0.12;
+}
+
+.gsi-material-button:active .gsi-material-button-state {
+  background-color: #303030;
+  opacity: 0.2;
+}
+
+.gsi-material-button:disabled {
+  cursor: default;
+  background-color: #ffffff61;
+  border-color: #1f1f1f1f;
+}
+
+.gsi-material-button:disabled .gsi-material-button-contents {
+  color: #1f1f1f3d;
+}
+
+.gsi-material-button:disabled .gsi-material-button-icon {
+  opacity: 0.5;
+}
+
+
+@layer utilities {
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .translate-z-12 {
+    transform: translateZ(3rem);
+  }
+  .-translate-z-12 {
+    transform: translateZ(-3rem);
+  }
+  .translate-z-20 {
+    transform: translateZ(5rem);
+  }
+  .-translate-z-10 {
+    transform: translateZ(-2.5rem);
+  }
+}

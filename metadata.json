@@ -1,0 +1,10 @@
+{
+  "name": "Remix DGPC_Patrimoine",
+  "description": "Application de gestion d\u0027inventaire pour le stock de matériels électriques, connectée à Google Sheets.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
